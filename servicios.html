@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Moda Urbana - Servicios</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<script>
+    // 1. Seleccionar todos los elementos con la clase list-group-item
+    let elementosLista = document.getElementsByClassName("list-group-item");
+    
+    // 2. Recorrerlos con un ciclo
+    for (let i = 0; i < elementosLista.length; i++) {
+        // Cambiar el color del texto
+        elementosLista[i].style.color = "blue";
+        // Agregar texto adicional
+        elementosLista[i].innerText = elementosLista[i].innerText + " - ¡En oferta!";
+    }
+</script>
+
+<body>
+    <div class="container my-4">
+        <nav class="mb-4">
+            <a href="index.html" class="me-3">Inicio</a>
+            <a href="servicios.html" class="me-3">Servicios</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+
+        <h2>Catálogo de Productos</h2>
+        <!-- Tabla básica con Bootstrap -->
+        <table class="table table-bordered">
+            <tr>
+                <th>Prenda</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td>Camisa Oversize</td>
+                <td>$45.000</td>
+            </tr>
+        </table>
+
+        <h2 class="mt-4">Nuestros Servicios</h2>
+        <ol class="list-group list-group-numbered">
+            <li class="list-group-item">Venta de ropa en línea</li>
+            <li class="list-group-item">Envíos a todo el país</li>
+        </ol>
+
+        <h2 class="mt-4">Video Institucional</h2>
+        <!-- Video responsivo básico -->
+        <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Video" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+</html>
